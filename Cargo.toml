@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "lenote-common",
+    "lenote-server",
+    "lenote-ui",
+]

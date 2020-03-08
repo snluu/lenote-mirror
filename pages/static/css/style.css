@@ -1,0 +1,178 @@
+html, body {
+    height: 100%;
+    font-family: Optima, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.full-height {
+    height: calc(100% - 20px);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color:#273c75;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.spacer-50 {
+    margin-bottom: 50px;
+    content: " ";
+}
+
+button, a.link-button {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a.link-button {
+    cursor: pointer;
+}
+
+a.link-button:hover {
+    text-decoration: underline;
+}
+
+
+/*  */
+
+#app-container {
+    padding: 15px;
+    height: calc(100% - 30px);    
+}
+
+.composer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.side-pane {
+    width: 20%;
+    min-width: 200px;
+    padding-right: 30px;
+}
+
+.main-pane {
+    min-width: 200px;
+    width: 80%;
+}
+
+.note-time-first {    
+    margin-bottom: 10px;
+    color: grey;
+    font-size: 0.9em;
+}
+
+.note-time {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: grey;
+    font-size: 0.9em;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom-style: inset;
+    border-bottom-width: 1px;
+    color: #2c3e50;
+}
+
+.note-canvas {
+    overflow-y: auto; 
+    overflow-x: wrap; 
+    min-height: 100px;
+    height: calc(100% - 150px); 
+    padding-bottom: 15px;
+}
+
+.note {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.note-input {
+    width: 100%;
+    height: 100px;
+}
+
+.note-line-pending {
+    font-style: italic;
+}
+
+.note-line-pending:before {
+    content: "[Pending] "
+}
+
+.note-highlight {
+    background-color: #FDF1DB;
+}
+
+.image-note {
+    max-width: 80%;
+    max-height: 300px;
+    height: auto;
+    width: auto;
+}
+
+.tag-category {
+    font-weight: bold;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.tag {
+    font-weight: 500;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.tag-headline {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.tag-map-time {
+    margin-bottom: 10px;
+    color: grey;
+    font-size: 0.9em;
+}
+
+.tag-map-status {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.tag-map-status.active {
+    color: #388E3C;
+}
+
+.tag-map-status.archive {
+    color: #424242;
+}
+
+.tag-notes-more {
+    background-color: #e3eeff;
+    font-size: small;
+}

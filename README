@@ -1,0 +1,18 @@
+Development flow:
+
+Prerequisite:
+- cargo install wasm-pack
+
+1. Start the server:
+cd lenote-server; fswatch src -vro | (while read; do clear; \
+    date; \
+    pkill lenote-server; \
+    sleep 2; \
+    (RUST_LOG="warn,lenote_server=info" cargo run -- --ui ../target/pkg/debug/ --pages ../pages --data ~/lenote-data &); \
+    done)
+
+2. On a different terminal, start file-watcher to compiler the UI on changes:
+cd lenote-ui; fswatch src -vro | (while read; do clear; \
+    date; \
+    wasm-pack build --debug --no-typescript -d ../target/pkg/debug --out-name lenote_ui --target web; \
+    done)
