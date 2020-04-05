@@ -86,7 +86,7 @@ impl Component for NoteInput {
             let _ = input.focus().unwrap_or_default();
         }
 
-        set_img_paste_callback(&self.id, &self.paste_callback_interop);
+        set_img_paste_callback('main-input', &self.paste_callback_interop);
 
         false
     }
