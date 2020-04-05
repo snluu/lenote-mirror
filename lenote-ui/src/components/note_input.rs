@@ -141,7 +141,7 @@ impl Component for NoteInput {
                             Msg::Submit
                         } else { Msg::None }
                     })
-                    onpaste=format!("handleInputPaste('{}', event);", self.id)
+                    onpaste="handleInputPaste('main-input', event);"
                 ></textarea>
             </div>
         }
